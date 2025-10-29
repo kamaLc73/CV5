@@ -8,6 +8,8 @@
     \usepackage[hidelinks]{hyperref}
     \usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry}
     \usepackage{longtable}
+    \usepackage{tikz}
+    \usepackage{graphicx}
     \textheight=10in
     \pagestyle{empty}
     \raggedright
@@ -78,13 +80,25 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \vspace*{-2pt}
   \begin{center}
-    {\Huge \scshape {Dehbi Kamal}}\\
-    \vspace*{1pt}
-    \ {Ingénieur Data Science, IA \& ML}\\
-    \vspace*{1pt}
-    \textbf{\href{tel:+212 607136757}{+212 607136757} | }\textbf{\href{mailto:kamaldehbi0114@gmail.com}{kamaldehbi0114@gmail.com}}\\
-    \vspace*{1pt}
-    \textbf{\href{https://github.com/kamaLc73}{Github : kamaLc73 | }}\textbf{\href{https://www.linkedin.com/in/kamal-dehbi/}{LinkedIn : kamal-dehbi}}\\
+  \begin{minipage}[c]{0.15\textwidth}
+      % Photo de profil avec cadre rond
+      \begin{tikzpicture}
+        \node[circle, minimum size=2.2cm, path picture={
+          \node at (path picture bounding box.center){
+            \includegraphics[width=2.5cm]{kamal.jpg}
+          };
+        }, draw=black, line width=0pt] {};
+      \end{tikzpicture}
+  \end{minipage}%
+  \begin{minipage}[c]{0.5\textwidth}
+      {\Huge \scshape {Dehbi Kamal}}\\
+      \vspace*{1pt}
+      \ {Ingénieur Data Science, IA \& ML}\\
+      \vspace*{1pt}
+      \textbf{\href{tel:+212 607136757}{+212 607136757} | }\textbf{\href{mailto:kamaldehbi0114@gmail.com}{kamaldehbi0114@gmail.com}}\\
+      \vspace*{1pt}
+      \textbf{\href{https://github.com/kamaLc73}{Github : kamaLc73 | }}\textbf{\href{https://www.linkedin.com/in/kamal-dehbi/}{LinkedIn : kamal-dehbi}}\\
+  \end{minipage}
   \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -96,7 +110,7 @@
       \vspace{0mm}
       \textbf{\href{https://ensam.um5.ac.ma/}{ENSAM Rabat : École nationale supérieure d\textquotesingle{}Arts et Métiers}}\hfill Rabat, Maroc\\
 Ingénierie en Data Science, IA \textbar{} Classe Préparatoire Intégrée. \hfill Sept. 2021 - Juin 2026\\
-\vspace{1mm}
+\vspace{2mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %
@@ -122,7 +136,7 @@ Ingénierie en Data Science, IA \textbar{} Classe Préparatoire Intégrée. \hfi
 \item[] • Conçu le schéma de base de données PostgreSQL en utilisant SQLAlchemy.
 \item[] • Déployé l'application en utilisant des conteneurs Docker.
 \end{itemize}
-\vspace{1mm}
+\vspace{-2mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -130,7 +144,7 @@ Ingénierie en Data Science, IA \textbar{} Classe Préparatoire Intégrée. \hfi
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \header{Skills}
-  \vspace{-1mm}
+  \vspace{-0.5mm}
   \begin{longtable}{p{5.5cm}p{11cm}}
   \textbf{Programming Languages:} & Python, Java, C, C++, R, Matlab, Scala, HTML, CSS, JavaScript \\
   \textbf{Machine Learning - AI:} & TensorFlow, Keras, Scikit-learn, XGBoost, OpenCV, NLTK, Spacy, LangChain, YOLO \\
@@ -141,7 +155,7 @@ Ingénierie en Data Science, IA \textbar{} Classe Préparatoire Intégrée. \hfi
   \textbf{Databases:} & MySQL, PostgreSQL, SQLite, Oracle SQL, MongoDB, Neo4j \\
   \textbf{Languages:} & Arabic (Native), French (Fluent), English (Fluent) \\
   \end{longtable}
-  \vspace{-1mm}
+  \vspace{-2mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %

@@ -8,6 +8,8 @@
     \usepackage[hidelinks]{hyperref}
     \usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry}
     \usepackage{longtable}
+    \usepackage{tikz}
+    \usepackage{graphicx}
     \textheight=10in
     \pagestyle{empty}
     \raggedright
@@ -71,21 +73,33 @@
     \begin{document}
     \vspace*{-40pt}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Profile
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \vspace*{-2pt}
-  \begin{center}
-    {\Huge \scshape {Dehbi Kamal}}\\
-    \vspace*{1pt}
-    \ {Data Science, AI \& ML Engineer}\\
-    \vspace*{1pt}
-    \textbf{\href{tel:+212 607136757}{+212 607136757} | }\textbf{\href{mailto:kamaldehbi0114@gmail.com}{kamaldehbi0114@gmail.com}}\\
-    \vspace*{1pt}
-    \textbf{\href{https://github.com/kamaLc73}{Github : kamaLc73 | }}\textbf{\href{https://www.linkedin.com/in/kamal-dehbi/}{LinkedIn : kamal-dehbi}}\\
-  \end{center}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Profile (English Version)
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %   \vspace*{-2pt}
+    \begin{center}
+    \begin{minipage}[c]{0.15\textwidth}
+        % Profile photo with rounded frame
+        \begin{tikzpicture}
+            \node[circle, minimum size=2.2cm, path picture={
+            \node at (path picture bounding box.center){
+                \includegraphics[width=2.5cm]{kamal.jpg}
+            };
+            }, draw=black, line width=0pt] {};
+        \end{tikzpicture}
+    \end{minipage}%
+    \begin{minipage}[c]{0.5\textwidth}
+        {\Huge \scshape {Dehbi Kamal}}\\
+        \vspace*{1pt}
+        \ {Data Science, AI \& ML Engineer}\\
+        \vspace*{1pt}
+        \textbf{\href{tel:+212 607136757}{+212 607136757} | }\textbf{\href{mailto:kamaldehbi0114@gmail.com}{kamaldehbi0114@gmail.com}}\\
+        \vspace*{1pt}
+        \textbf{\href{https://github.com/kamaLc73}{Github : kamaLc73 | }}\textbf{\href{https://www.linkedin.com/in/kamal-dehbi/}{LinkedIn : kamal-dehbi}}\\
+    \end{minipage}
+    \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %
