@@ -1,34 +1,34 @@
 \documentclass[a4paper]{article}
-    \usepackage{fullpage}
-    \usepackage{amsmath}
-    \usepackage{amssymb}
-    \usepackage{textcomp}
-    \usepackage[utf8]{inputenc}
-    \usepackage[T1]{fontenc}
-    % \usepackage[hidelinks]{hyperref}
-    \usepackage{hyperref}
-    \usepackage{xcolor}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% \usepackage[hidelinks]{hyperref};
+\usepackage{hyperref}
+\usepackage{xcolor}
 
-    \usepackage{xcolor} % Ajoutez cette ligne si elle n'existe pas déjà
+\usepackage{xcolor} % Ajoutez cette ligne si elle n'existe pas déjà
 
-    \definecolor{linkcolor}{HTML}{465ca0} % Définir votre couleur personnalisée
+\definecolor{linkcolor}{HTML}{465ca0} % Définir votre couleur personnalisée
 
-    \hypersetup{
-        colorlinks=true,
-        linkcolor=black,
-        urlcolor=linkcolor,     % Utiliser votre couleur personnalisée
-        citecolor=black,
-        filecolor=linkcolor
-    }
-    \usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry}
-    \usepackage{longtable}
-    \usepackage{tikz}
-    \usepackage{graphicx}
-    \textheight=10in
-    \pagestyle{empty}
-    \raggedright
+\hypersetup{
+colorlinks=true,
+linkcolor=black,
+urlcolor=linkcolor,     % Utiliser votre couleur personnalisée
+citecolor=black,
+filecolor=linkcolor
+}
+\usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{graphicx}
+\textheight=10in
+\pagestyle{empty}
+\raggedright
 
-    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\encodingdefault}{cg}
 %\renewcommand{\rmdefault}{lgrcmr}
 
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
@@ -36,202 +36,204 @@
 % DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\area} [2] {
-    \vspace*{-9pt}
-    \begin{verse}
-        \textbf{#1}   #2
-    \end{verse}
+\vspace*{-9pt}
+\begin{verse}
+\textbf{#1}   #2
+\end{verse}
 }
 
 \newcommand{\lineunder} {
-    \vspace*{-8pt} \\
-    \hspace*{-18pt} \hrulefill \\
+\vspace*{-8pt} \\
+\hspace*{-18pt} \hrulefill \\
 }
 
 \newcommand{\header} [1] {
-    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
-    \vspace*{-6pt} \lineunder
+{\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+\vspace*{-6pt} \lineunder
 }
 
 \newcommand{\employer} [3] {
-    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+{ \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
 }
 
 \newcommand{\contact} [3] {
-    \vspace*{-10pt}
-    \begin{center}
-        {\Huge \scshape {#1}}\\
-        #2 \\ #3
-    \end{center}
-    \vspace*{-8pt}
+\vspace*{-10pt}
+\begin{center}
+{\Huge \scshape {#1}}\\
+#2 \\ #3
+\end{center}
+\vspace*{-8pt}
 }
 
 \newenvironment{achievements}{
-    \begin{list}
-        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
-    \end{list}
+\begin{list}
+{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+\end{list}
 }
 
 \newcommand{\schoolwithcourses} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
-    \vspace*{5pt}
+\textbf{#1} #2 $\bullet$ #3\\
+#4 \\
+\vspace*{5pt}
 }
 
 \newcommand{\school} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
+\textbf{#1} #2 $\bullet$ #3\\
+#4 \\
 }
 
 % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
-    \begin{document}
-    \vspace*{-40pt}
+\begin{document}
+\vspace*{-40pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     Profile
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \vspace*{-2pt}
-  \begin{center}
-  \begin{minipage}[c]{0.15\textwidth}
-      % Photo de profil avec cadre rond
-      \begin{tikzpicture}
-        \node[circle, minimum size=2.2cm, path picture={
-          \node at (path picture bounding box.center){
-            \includegraphics[width=2.5cm]{kamal.jpg}
-          };
-        }, draw=black, line width=0pt] {};
-      \end{tikzpicture}
-  \end{minipage}%
-  \begin{minipage}[c]{0.5\textwidth}
-      {\Huge \scshape {Dehbi Kamal}}\\
-      \vspace*{1pt}
-      \ {Ingénieur Data Science, IA \& ML}\\
-      \vspace*{1pt}
-      \textbf{\href{tel:+212 607136757}{+212 607136757} | }\textbf{\href{mailto:kamaldehbi0114@gmail.com}{kamaldehbi0114@gmail.com}}\\
-      \vspace*{1pt}
-      \textbf{\href{https://github.com/kamaLc73}{Github : kamaLc73 | }}\textbf{\href{https://www.linkedin.com/in/kamal-dehbi/}{LinkedIn : kamal-dehbi}}\\
-  \end{minipage}
-  \end{center}
+\vspace*{-2pt}
+\begin{center}
+	\begin{minipage}[c]{0.15\textwidth}
+		% Photo de profil avec cadre rond
+		\begin{tikzpicture}
+			\node[circle, minimum size=2.2cm, path picture={
+					\node at (path picture bounding box.center){
+						\includegraphics[width=2.5cm]{kamal.jpg}
+					};
+				}] {};
+		\end{tikzpicture}
+	\end{minipage}%
+	\begin{minipage}[c]{0.5\textwidth}
+		{\Huge \scshape {Dehbi Kamal}}\\
+		\vspace*{1pt}
+		\ {Ingénieur Data Science, IA \& Big Data}\\
+		\vspace*{1pt}
+		\textbf{\href{tel:+212 607136757}{+212 607136757} | }\textbf{\href{mailto:kamaldehbi0114@gmail.com}{kamaldehbi0114@gmail.com}}\\
+		\vspace*{1pt}
+		\textbf{\href{https://github.com/kamaLc73}{Github : kamaLc73 | }}\textbf{\href{https://www.linkedin.com/in/kamal-dehbi/}{LinkedIn : kamal-dehbi}}\\
+	\end{minipage}
+\end{center}
+\vspace{-4mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Education
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Education}
+\vspace{1mm}
+\textbf{\href{https://ensam.um5.ac.ma/}{ENSAM Rabat : École nationale supérieure d\textquotesingle{}Arts et Métiers}}\hfill Rabat, Maroc\\
+Ingénierie en Data Science, IA \textbar{} Classe Préparatoire Intégrée. \hfill Sept 2021 - En cours\\
+\vspace{1mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %
-    %     Education
-    %
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \header{Formation}
-      \vspace{0mm}
-      \textbf{\href{https://ensam.um5.ac.ma/}{ENSAM Rabat : École nationale supérieure d\textquotesingle{}Arts et Métiers}}\hfill Rabat, Maroc\\
-Ingénierie en Data Science, IA \textbar{} Classe Préparatoire Intégrée. \hfill Sept. 2021 - Juin 2026\\
-\vspace{2mm}
-
+%
+%     Experience
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %
-    %     Experience
-    %
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \header{Expérience}
-      \vspace{0mm}
+\header{Expérience professionnel}
+\vspace{0mm}
 
-      \textbf{\href{https://www.archytas.fr/}{Digiteam Archytas Conseil}}\textbf{ \href{https://github.com/kamaLc73/Fairlynk-Guide-Bot}{| Chatbot Development}} \hfill Rabat, Morocco | Jul 2025 - Sep 2025\\
-          \vspace{-2mm}
-\begin{itemize} \itemsep -3pt
-\item[] • Développé un chatbot pour la plateforme Fairlynk en utilisant un pipeline RAG, Langchain avec clé API groq.
-\item[] • Pris en charge les questions multilingues en français, anglais et espagnol.
-\item[] • Créé l'interface utilisateur avec Streamlit, HTML et CSS.
-\end{itemize}
+\textbf{\href{https://www.archytas.fr/}{Digiteam Archytas Conseil}}\textbf{ \href{https://github.com/kamaLc73/Fairlynk-Guide-Bot}{| Chatbot Development}} \hfill Rabat, Maroc | Juill 2025 - Sept 2025\\
 \vspace{-2mm}
-      \textbf{\href{https://www.bkam.ma/}{Bank Al-Maghrib (Dar Assikah)}}\textbf{ \href{https://github.com/kamaLc73/Plate-recognition}{| Backend Development}} \hfill Sale, Morocco | Jul 2024 - Aug 2024\\
-          \vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-\item[] • Créé une API Flask pour la détection de plaques d'immatriculation à partir d'images en utilisant un modèle CNN.
-\item[] • Atteint 95\% de précision sur les plaques marocaines.
-\item[] • Conçu le schéma de base de données PostgreSQL en utilisant SQLAlchemy.
-\item[] • Déployé l'application en utilisant des conteneurs Docker.
+	\item[] • Développé un chatbot pour la plateforme Fairlynk en utilisant un pipeline RAG, Langchain avec clé API groq.
+	\item[] • Pris en charge les questions multilingues en français, anglais et espagnol.
+	\item[] • Créé l'interface utilisateur avec Streamlit, HTML et CSS.
 \end{itemize}
+
+\vspace{0mm}
+\textbf{\href{https://www.bkam.ma/}{Bank Al-Maghrib (Dar Assikah)}}\textbf{ \href{https://github.com/kamaLc73/Plate-recognition}{| Backend Development}} \hfill Sale, Maroc | Juill 2024 - Août 2024\\
 \vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+	\item[] • Créé une API Flask pour la détection de plaques d'immatriculation à partir d'images en utilisant un modèle CNN.
+	\item[] • Atteint 95\% de précision sur les plaques marocaines.
+	\item[] • Conçu le schéma de base de données PostgreSQL en utilisant SQLAlchemy.
+	\item[] • Déployé l'application en utilisant des conteneurs Docker.
+\end{itemize}
+\vspace{-3.5mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     Skills
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \header{Skills}
-  \vspace{-0.5mm}
-  \begin{longtable}{p{5.5cm}p{11cm}}
-  \textbf{Programming Languages:} & Python, Java, C, C++, R, Matlab, Scala, HTML, CSS, JavaScript \\
-  \textbf{Machine Learning - AI:} & TensorFlow, Keras, Scikit-learn, XGBoost, OpenCV, NLTK, Spacy, LangChain, YOLO \\
-  \textbf{Data Analysis - Viz:} & Pandas, NumPy, Matplotlib, Seaborn, Plotly, Power BI, Google Looker Studio \\
-  \textbf{Big Data:} & Apache Kafka, Hadoop, Hive, Pig, Sqoop, Spark, HBase \\
-  \textbf{Web Development:} & Flask, FastAPI, Java EE, React, Streamlit, Bootstrap, Jinja, SQLAlchemy, Beautiful Soup, Selenium \\
-  \textbf{Tools - Platforms:} & Git, GitHub, Linux, Docker, VS Code \\
-  \textbf{Databases:} & MySQL, PostgreSQL, SQLite, Oracle SQL, MongoDB, Neo4j \\
-  \textbf{Languages:} & Arabic (Native), French (Fluent), English (Fluent) \\
-  \end{longtable}
-  \vspace{-2mm}
+\header{Skills}
+\vspace{-0.5mm}
+\begin{longtable}{p{5.5cm}p{11cm}}
+	\textbf{Programming Languages:} & Python, Java, C, C++, R, Matlab, Scala, HTML, CSS, JavaScript                                     \\
+	\textbf{Machine Learning - AI:} & TensorFlow, Keras, Scikit-learn, XGBoost, OpenCV, NLTK, Spacy, LangChain, YOLO                    \\
+	\textbf{Data Analysis - Viz:}   & Pandas, NumPy, Matplotlib, Seaborn, Plotly, Power BI, Google Looker Studio                        \\
+	\textbf{Big Data:}              & Apache Kafka, Hadoop, Hive, Pig, Sqoop, Spark, HBase                                              \\
+	\textbf{Web Development:}       & Flask, FastAPI, Java EE, React, Streamlit, Bootstrap, Jinja, SQLAlchemy, Beautiful Soup, Selenium \\
+	\textbf{Tools - Platforms:}     & Git, GitHub, Linux, Docker, VS Code                                                               \\
+	\textbf{Databases:}             & MySQL, PostgreSQL, SQLite, Oracle SQL, MongoDB, Neo4j                                             \\
+	\textbf{Languages:}             & Arabic (Native), French (Fluent), English (Fluent)                                                \\
+	\textbf{Soft Skills:}           & Résolution de problèmes, Travail d'équipe, Pensée critique, Adaptabilité, Communication      \\
+\end{longtable}
+\vspace{-6.4mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %
-    %     Projects
-    %
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \header{Projets}
-      \vspace{0mm}
-      \href{https://github.com/kamaLc73/Seismic-GNSS-CNN}{\textbf{Système d'Alerte Précoce aux Tremblements de Terre}}\hfill{\sl Deep Learning, CNN, GNSS}\\
-          \vspace{-2mm}
+%
+%     Projects
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Projets}
+\vspace{0mm}
+\href{https://github.com/kamaLc73/Seismic-GNSS-CNN}{\textbf{Système d'Alerte Précoce aux Tremblements de Terre}}\hfill{\sl Deep Learning, CNN, GNSS}\\
+\vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-\item[] Conçu des modèles CNN utilisant des données GNSS à haute fréquence pour prédire la magnitude des tremblements de terre et les lignes de faille avec une précision améliorée.
+	\item[] Conçu des modèles CNN utilisant des données GNSS à haute fréquence pour prédire la magnitude des tremblements de terre et les lignes de faille avec une précision améliorée.
 \end{itemize}
-      \vspace{-1mm}
-      \href{https://github.com/kamaLc73/NER\_project}{\textbf{Reconnaissance d'Entités Nommées (NER)}}\hfill{\sl NLP, spaCy, HTML, CSS}\\
-          \vspace{-2mm}
+\vspace{-1mm}
+\href{https://github.com/kamaLc73/NER\_project}{\textbf{Reconnaissance d'Entités Nommées (NER)}}\hfill{\sl NLP, spaCy, HTML, CSS}\\
+\vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-\item[] Développé un modèle NLP pour la reconnaissance d'entités nommées afin d'extraire des entités à partir de textes médicaux et génériques, améliorant la précision de l'extraction de données.
+	\item[] Développé un modèle NLP pour la reconnaissance d'entités nommées afin d'extraire des entités à partir de textes médicaux et génériques, améliorant la précision de l'extraction de données.
 \end{itemize}
-      \vspace{-1mm}
-      \href{https://github.com/HAS1ELB/DataCarelytics}{\textbf{Laboratoire de Data Science Médicale}}\hfill{\sl Streamlit, Numpy, Plotly, Scikit-Learn, LangChain}\\
-          \vspace{-2mm}
+\vspace{-1mm}
+\href{https://github.com/HAS1ELB/DataCarelytics}{\textbf{Laboratoire de Data Science Médicale}}\hfill{\sl Streamlit, Numpy, Plotly, Scikit-Learn, LangChain}\\
+\vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-\item[] Créé des tableaux de bord interactifs et des visualisations pour des ensembles de données cliniques avec Streamlit, améliorant la prise de décision basée sur les données.
+	\item[] Créé des tableaux de bord interactifs et des visualisations pour des ensembles de données cliniques avec Streamlit, améliorant la prise de décision basée sur les données.
 \end{itemize}
-      \vspace{-1mm}
-      \href{https://github.com/kamaLc73/Data-Collect-LinkedIn-Profiles-}{\textbf{Suivi des Anciens Élèves ENSAM (LinkedIn)}}\hfill{\sl Beautiful Soup, Selenium}\\
-          \vspace{-2mm}
+\vspace{-1mm}
+\href{https://github.com/kamaLc73/Data-Collect-LinkedIn-Profiles-}{\textbf{Suivi des Anciens Élèves ENSAM (LinkedIn)}}\hfill{\sl Beautiful Soup, Selenium}\\
+\vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-\item[] Développé des outils de web scraping pour collecter les données des anciens élèves sur LinkedIn, effectué une analyse de données et créé des modèles pour prédire les parcours professionnels.
+	\item[] Développé des outils de web scraping pour collecter les données des anciens élèves sur LinkedIn, effectué une analyse de données et créé des modèles pour prédire les parcours professionnels.
 \end{itemize}
-      \vspace{-1mm}
-      \href{https://github.com/kamaLc73/YOLO\_kafka}{\textbf{Traitement de Flux en Temps Réel avec Apache Kafka}}\hfill{\sl Apache Kafka, Streamlit, YOLO}\\
-          \vspace{-2mm}
+\vspace{-1mm}
+\href{https://github.com/kamaLc73/YOLO\_kafka}{\textbf{Traitement de Flux en Temps Réel avec Apache Kafka}}\hfill{\sl Apache Kafka, Streamlit, YOLO}\\
+\vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-\item[] Mis en place une architecture de streaming de données en temps réel évolutive utilisant Apache Kafka pour traiter des flux d'images, de vidéos et de données textuelles.
+	\item[] Mis en place une architecture de streaming de données en temps réel évolutive utilisant Apache Kafka pour traiter des flux d'images, de vidéos et de données textuelles.
 \end{itemize}
-          \vspace{-1mm}
-      \href{https://github.com/lidwaa/brain\_tumor\_classification}{\textbf{Classification des Tumeurs Cérébrales}}\hfill{\sl Deep Learning, CNN}\\
-          \vspace{-2mm}
+\vspace{-1mm}
+\href{https://github.com/lidwaa/brain\_tumor\_classification}{\textbf{Classification des Tumeurs Cérébrales}}\hfill{\sl Deep Learning, CNN}\\
+\vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-\item[] Développé un modèle CNN pour classifier les tumeurs cérébrales comme bénignes ou malignes, atteignant 98\% de précision.
+	\item[] Développé un modèle CNN pour classifier les tumeurs cérébrales comme bénignes ou malignes, atteignant 98\% de précision.
 \end{itemize}
-          \vspace{-1mm}
-      \href{https://github.com/kamaLc73/Doc\_management\_jee}{\textbf{Gestion Sécurisée de Documents}}\hfill{\sl Java EE, MySQL}\\
-          \vspace{-2mm}
+\vspace{-1mm}
+\href{https://github.com/kamaLc73/Doc\_management\_jee}{\textbf{Gestion Sécurisée de Documents}}\hfill{\sl Java EE, MySQL}\\
+\vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-\item[] Créé un système de gestion de documents sécurisé pour le stockage, la consultation et le téléchargement de fichiers en utilisant Java EE et MySQL.
+	\item[] Créé un système de gestion de documents sécurisé pour le stockage, la consultation et le téléchargement de fichiers en utilisant Java EE et MySQL.
 \end{itemize}
-          \vspace{0mm}
+\vspace{-1mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      %
-      %     Certifications
-      %
-      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \header{Certifications}
-      \vspace{-0.5mm}
-      • CCNA: Introduction aux Réseaux - \textbf{\href{https://www.credly.com/badges/540e0c44-897a-4762-873b-7a01fbfb68ab/public\_url}{Cisco Networking Academy}}\\
+%
+%     Certifications
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Certifications}
+\vspace{0mm}
+• CCNA: Introduction aux Réseaux - \textbf{\href{https://www.credly.com/badges/540e0c44-897a-4762-873b-7a01fbfb68ab/public\_url}{Cisco Networking Academy}}\\
 \vspace*{0mm}
-      • CS50x: Introduction à l'Informatique - \textbf{\href{https://certificates.cs50.io/e4d5f24a-9711-490a-9c03-5ed9ba3f056e.pdf?size=letter}{Harvard University (edX)}}\\
+• CS50x: Introduction à l'Informatique - \textbf{\href{https://certificates.cs50.io/e4d5f24a-9711-490a-9c03-5ed9ba3f056e.pdf?size=letter}{Harvard University (edX)}}\\
 \vspace*{0mm}
 
-    \ 
-    \end{document}
+\ 
+\end{document}
