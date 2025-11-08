@@ -5,13 +5,10 @@
 \usepackage{textcomp}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-% \usepackage[hidelinks]{hyperref}
 \usepackage{hyperref}
 \usepackage{xcolor}
 
-\usepackage{xcolor} % Ajoutez cette ligne si elle n'existe pas déjà
-
-\definecolor{linkcolor}{HTML}{465ca0} % Définir votre couleur personnalisée
+\definecolor{linkcolor}{HTML}{465ca0}
 
 \hypersetup{
     colorlinks=true,
@@ -32,19 +29,7 @@
 \pagestyle{empty}
 \raggedright
 
-%\renewcommand{\encodingdefault}{cg}
-%\renewcommand{\rmdefault}{lgrcmr}
-
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
-
-% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
-
-\newcommand{\area} [2] {
-\vspace*{-9pt}
-\begin{verse}
-\textbf{#1}   #2
-\end{verse}
-}
 
 \newcommand{\lineunder} {
 \vspace*{-8pt} \\
@@ -56,50 +41,11 @@
 \vspace*{-6pt} \lineunder
 }
 
-\newcommand{\employer} [3] {
-{ \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
-}
-
-\newcommand{\contact} [3] {
-\vspace*{-10pt}
-\begin{center}
-{\Huge \scshape {#1}}\\
-#2 \\ #3
-\end{center}
-\vspace*{-8pt}
-}
-
-\newenvironment{achievements}{
-\begin{list}
-{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
-\end{list}
-}
-
-\newcommand{\schoolwithcourses} [4] {
-\textbf{#1} #2 $\bullet$ #3\\
-#4 \\
-\vspace*{5pt}
-}
-
-\newcommand{\school} [4] {
-\textbf{#1} #2 $\bullet$ #3\\
-#4 \\
-}
-
-% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document}
 \vspace*{-40pt}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Profile (English Version)
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   \vspace*{-2pt}
 \begin{center}
 	\begin{minipage}[c]{0.15\textwidth}
-		% Profile photo with rounded frame
 		\begin{tikzpicture}
 			\node[circle, minimum size=2.2cm, path picture={
 					\node at (path picture bounding box.center){
@@ -111,7 +57,7 @@
 	\begin{minipage}[c]{0.5\textwidth}
 		{\Huge \scshape {Dehbi Kamal}}\\
 		\vspace*{1pt}
-		\ {Data Science, AI \& Big Data Engineer}\\
+		\ {Ingénieur Data Science, IA \& Big Data}\\
 		\vspace*{1pt}
 		\textbf{\href{tel:+212 607136757}{+212 607136757} | }\textbf{\href{mailto:kamaldehbi0114@gmail.com}{kamaldehbi0114@gmail.com}}\\
 		\vspace*{1pt}
@@ -120,125 +66,115 @@
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Education
-%
+%     Formation
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\header{Education}
+\header{Formation}
 \vspace{0mm}
-\textbf{\href{https://ensam.um5.ac.ma/}{ENSAM Rabat : École nationale supérieure d\textquotesingle{}Arts et Métiers}}\hfill Rabat, Morocco\\
-Engineering in Data Science, AI \textbar{} Integrated Preparatory Class. \hfill Sep 2021 - Present\\
+\textbf{\href{https://ensam.um5.ac.ma/}{ENSAM Rabat : École nationale supérieure d\textquotesingle{}Arts et Métiers}}\hfill Rabat, Maroc\\
+Ingénierie en Data Science, IA \textbar{} Classe Préparatoire Intégrée. \hfill Sep 2021 - Présent\\
 \vspace{2mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Experience
-%
+%     Expérience Professionnelle
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\header{Professional Experience}
+\header{Expérience Professionnelle}
 \vspace{0mm}
 
-\textbf{ \href{https://github.com/kamaLc73/Fairlynk-Guide-Bot}{Chatbot Development} |}
+\textbf{ \href{https://github.com/kamaLc73/Fairlynk-Guide-Bot}{Développement de Chatbot} |} 
 \textbf{\href{https://www.archytas.fr/}{Digiteam Archytas Conseil}}
-\hfill Rabat, Morocco | Jul 2025 - Sept 2025\\          \vspace{-2mm}
+\hfill Rabat, Maroc | Juil 2025 - Sept 2025\\          \vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-	\item[] • Developed a chatbot for the Fairlynk platform using a RAG pipeline, Langchain with groq API Key.
-	\item[] • Supported multilingual questions in French, English, and Spanish.
-	\item[] • Built user interface using Streamlit, HTML, and CSS.
+	\item[] • Développé un chatbot pour la plateforme Fairlynk utilisant un pipeline RAG, Langchain avec clé API groq.
+	\item[] • Prise en charge des questions multilingues en français, anglais et espagnol.
+	\item[] • Construction de l'interface utilisateur avec Streamlit, HTML et CSS.
 \end{itemize}
 \vspace{-2mm}
-\textbf{\href{https://github.com/kamaLc73/Plate-recognition}{Backend Development} |} 
+\textbf{ \href{https://github.com/kamaLc73/Plate-recognition}{Développement Backend} |} 
 \textbf{\href{https://www.bkam.ma/}{Bank Al-Maghrib (Dar Assikah)}}
-\hfill Sale, Morocco | Jul 2024 - Aug 2024\\          \vspace{-2mm}
+\hfill Salé, Maroc | Juil 2024 - Août 2024\\          \vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-	\item[] • Built a Flask API for license plate detection from images using a CNN model.
-	\item[] • Achieved 95\% accuracy on Moroccan plates.
-	\item[] • Designed PostgreSQL database schema using SQLAlchemy.
-	\item[] • Deployed the application using Docker containers.
+	\item[] • Création d'une API Flask pour la détection de plaques d'immatriculation à partir d'images avec un modèle CNN.
+	\item[] • Précision de 95\% sur les plaques marocaines.
+	\item[] • Conception du schéma de base de données PostgreSQL avec SQLAlchemy.
+	\item[] • Déploiement de l'application avec des conteneurs Docker.
 \end{itemize}
 \vspace{1mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Skills
-%
+%     Compétences
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\header{Skills}
+\header{Compétences}
 \vspace{-0.5mm}
 \begin{longtable}{p{5.5cm}p{11cm}}
-	\textbf{Programming Languages:} & Python, Java, C, C++, R, Matlab, Scala, HTML, CSS, JavaScript                                     \\
-	\textbf{Machine Learning - AI:} & TensorFlow, Keras, Scikit-learn, XGBoost, OpenCV, NLTK, Spacy, LangChain, YOLO                    \\
-	\textbf{Data Analysis - Viz:}   & Pandas, NumPy, Matplotlib, Seaborn, Plotly, Power BI, Google Looker Studio                        \\
+	\textbf{Langages de Programmation:} & Python, Java, C, C++, R, Matlab, Scala, HTML, CSS, JavaScript                                     \\
+	\textbf{Machine Learning - IA:} & TensorFlow, Keras, Scikit-learn, XGBoost, OpenCV, NLTK, Spacy, LangChain, YOLO                    \\
+	\textbf{Analyse de Données - Viz:}   & Pandas, NumPy, Matplotlib, Seaborn, Plotly, Power BI, Google Looker Studio                        \\
 	\textbf{Big Data:}              & Apache Kafka, Hadoop, Hive, Pig, Sqoop, Spark, HBase                                              \\
-	\textbf{Web Development:}       & Flask, FastAPI, Java EE, React, Streamlit, Bootstrap, Jinja, SQLAlchemy, Beautiful Soup, Selenium \\
-	\textbf{Tools - Platforms:}     & Git, GitHub, Linux, Docker, VS Code                                                               \\
-	\textbf{Databases:}             & MySQL, PostgreSQL, SQLite, Oracle SQL, MongoDB, Neo4j                                             \\
-	\textbf{Languages:}             & Arabic (Native), French (Fluent), English (Fluent)                                                \\
-	\textbf{Soft Skills:}           & Problem Solving, Team Collaboration, Critical Thinking, Adaptability, Communication               \\
+	\textbf{Développement Web:}       & Flask, FastAPI, Java EE, React, Streamlit, Bootstrap, Jinja, SQLAlchemy, Beautiful Soup, Selenium \\
+	\textbf{Outils - Plateformes:}     & Git, GitHub, Linux, Docker, VS Code, AWS Cloud                                                    \\
+	\textbf{Bases de Données:}             & MySQL, PostgreSQL, SQLite, Oracle SQL, MongoDB, Neo4j                                             \\
+	\textbf{Langues:}             & Arabe (Natif), Français (Courant), Anglais (Courant)                                                \\
 \end{longtable}
 \vspace{-2mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Projects
-%
+%     Projets
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\header{Projects}
+\header{Projets}
 \vspace{0mm}
-\href{https://github.com/kamaLc73/Seismic-GNSS-CNN}{\textbf{Earthquake Early Warning System}}\hfill{\sl Deep Learning, CNN, GNSS}\\
+
+\href{https://github.com/kamaLc73/YOLO\_kafka}{\textbf{Traitement de Flux en Temps Réel avec Apache Kafka}}\hfill{\sl Apache Kafka, Streamlit, YOLO}\\
 \vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-	\item[] Designed CNN models using high-rate GNSS data to predict earthquake magnitude and fault lines with improved accuracy.
+	\item[] Mise en place d'une architecture de streaming de données en temps réel évolutive utilisant Apache Kafka pour traiter des flux d'images, vidéos et textes.
 \end{itemize}
 \vspace{-1mm}
-\href{https://github.com/kamaLc73/NER\_project}{\textbf{Named Entity Recognition (NER)}}\hfill{\sl NLP, spaCy, HTML, CSS}\\
+
+\href{https://github.com/HAS1ELB/projet-migration-mysql-hadoop}{\textbf{Migration MySQL vers Hadoop avec Sqoop}}\hfill{\sl Sqoop, Hadoop, Hive, HDFS}\\
 \vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-	\item[] Developed an NLP model for named entity recognition to extract entities from medical and generic texts, improving data extraction accuracy.
+	\item[] Construction d'un pipeline de données pour transférer des données de MySQL vers HDFS avec Sqoop et analyse avec Hive.
 \end{itemize}
 \vspace{-1mm}
-\href{https://github.com/HAS1ELB/DataCarelytics}{\textbf{Medical Data Science Lab}}\hfill{\sl Streamlit, Plotly, Scikit-Learn, LangChain}\\
+
+\href{https://github.com/HAS1ELB/DataCarelytics}{\textbf{Laboratoire de Data Science Médicale}}\hfill{\sl Streamlit, Plotly, Scikit-Learn, LangChain}\\
 \vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-	\item[] Created interactive dashboards and visualizations for clinical datasets using Streamlit, enhancing data-driven decision making.
+	\item[] Création de tableaux de bord interactifs et de visualisations pour des ensembles de données cliniques avec Streamlit, améliorant la prise de décision basée sur les données.
 \end{itemize}
 \vspace{-1mm}
-\href{https://github.com/kamaLc73/Data-Collect-LinkedIn-Profiles-}{\textbf{ENSAM Alumni Tracking (LinkedIn)}}\hfill{\sl Beautiful Soup, Selenium}\\
+
+\href{https://github.com/kamaLc73/Data-Collect-LinkedIn-Profiles-}{\textbf{Suivi des Alumni ENSAM (LinkedIn)}}\hfill{\sl Beautiful Soup, Selenium}\\
 \vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-	\item[] Developed web scraping tools to collect alumni data from LinkedIn, performed data analysis, and built models to predict career paths.
+	\item[] Développement d'outils de web scraping pour collecter les données des alumni depuis LinkedIn, analyse des données et construction de modèles pour prédire les parcours professionnels.
 \end{itemize}
 \vspace{-1mm}
-\href{https://github.com/kamaLc73/YOLO\_kafka}{\textbf{Real-Time Stream Processing with Apache Kafka}}\hfill{\sl Apache Kafka, Streamlit, YOLO}\\
+
+\href{https://github.com/kamaLc73/Seismic-GNSS-CNN}{\textbf{Système d'Alerte Précoce aux Tremblements de Terre}}\hfill{\sl Deep Learning, CNN, GNSS}\\
 \vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-	\item[] Implemented a scalable real-time data streaming architecture using Apache Kafka to process images, videos, and text data streams.
+	\item[] Conception de modèles CNN utilisant des données GNSS haute fréquence pour prédire la magnitude des tremblements de terre et les lignes de faille avec une précision améliorée.
 \end{itemize}
 \vspace{-1mm}
-\href{https://github.com/lidwaa/brain\_tumor\_classification}{\textbf{Brain Tumor Classification}}\hfill{\sl Deep Learning, CNN}\\
+
+\href{https://github.com/lidwaa/brain\_tumor\_classification}{\textbf{Classification de Tumeurs Cérébrales}}\hfill{\sl Deep Learning, CNN}\\
 \vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-	\item[] Developed a CNN model to classify brain tumors as benign or malignant, achieving 98\% accuracy.
-\end{itemize}
-\vspace{-1mm}
-\href{https://github.com/kamaLc73/Doc\_management\_jee}{\textbf{Secure Document Management}}\hfill{\sl Java EE, MySQL}\\
-\vspace{-2mm}
-\begin{itemize} \itemsep -3pt
-	\item[] Built a secure document management system for file storage, consultation, and downloads using Java EE and MySQL.
+	\item[] Développement d'un modèle CNN pour classifier les tumeurs cérébrales comme bénignes ou malignes, avec une précision de 98\%.
 \end{itemize}
 \vspace{0mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     Certifications
-%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \header{Certifications}
+\vspace{1mm}
+• AWS Cloud Practitioner (CLF-C02) - \textbf{\href{https://www.datacamp.com/completed/statement-of-accomplishment/track/bd5de439ea5f9715e10e29f0c2dafdef74b56d11}{DataCamp}}\\
 \vspace{-0.5mm}
 • CCNA: Introduction to Networks - \textbf{\href{https://www.credly.com/badges/540e0c44-897a-4762-873b-7a01fbfb68ab/public\_url}{Cisco Networking Academy}}\\
 \vspace*{0mm}
 • CS50x: Introduction to Computer Science - \textbf{\href{https://certificates.cs50.io/e4d5f24a-9711-490a-9c03-5ed9ba3f056e.pdf?size=letter}{Harvard University (edX)}}\\
 \vspace*{0mm}
-
 \ 
 \end{document}
