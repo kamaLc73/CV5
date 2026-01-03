@@ -43,13 +43,13 @@
 }
 
 \begin{document}
-\vspace*{-25pt}
+\vspace*{-30pt}
 \begin{center}
 	\begin{minipage}[c]{0.15\textwidth}
 		\begin{tikzpicture}
-			\node[circle, minimum size=2.2cm, path picture={
+			\node[rectangle, minimum width=2.2cm, minimum height=2.2cm, path picture={
 				\node at (path picture bounding box.center){
-					\includegraphics[width=2.5cm]{kamal.jpg}
+					\includegraphics[width=2.2cm, height=2.2cm]{kamal.jpg}
 				};
 			}] {};
 		\end{tikzpicture}
@@ -76,7 +76,7 @@
 \header{Education}
 \vspace{0mm}
 \textbf{\href{https://ensam.um5.ac.ma/}{ENSAM Rabat : École nationale supérieure d\textquotesingle{}Arts et Métiers}}\hfill Rabat, Morocco\\
-Engineering in Data Science, AI \textbar{} Integrated Preparatory Class. \hfill Sep 2021 - Present\\
+Engineering in Data Science, AI \& Big Data \textbar{} Integrated Preparatory Class. \hfill Sep 2021 - Present\\
 \vspace{2mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -89,8 +89,8 @@ Engineering in Data Science, AI \textbar{} Integrated Preparatory Class. \hfill 
 \textbf{\href{https://www.archytas.fr/}{Digiteam Archytas Conseil}}
 \hfill Rabat, Morocco | Jul 2025 - Sept 2025\\          \vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-    \item Developed a chatbot for the \href{https://fairlynk.com/}{\textbf{Fairlynk}} platform leveraging a RAG pipeline and LangChain integrated with the Groq API.
-    \item[] • Supported multilingual questions in French, English, and Spanish.
+	\item[] • Developed a chatbot for the \href{https://fairlynk.com/}{\textbf{Fairlynk}} platform using a RAG pipeline, LangChain with external LLMs via API.
+	\item[] • Supported multilingual questions in French, English, and Spanish.
 	\item[] • Built user interface using Streamlit, HTML, and CSS.
 \end{itemize}
 \vspace{-2mm}
@@ -100,75 +100,82 @@ Engineering in Data Science, AI \textbar{} Integrated Preparatory Class. \hfill 
 \begin{itemize} \itemsep -3pt
 	\item[] • Built a Flask API for license plate detection from images using a CNN model.
 	\item[] • Achieved 95\% accuracy on Moroccan plates.
-	\item[] • Designed PostgreSQL database schema using SQLAlchemy.
+	\item[] • Designed PostgreSQL database schema.
 	\item[] • Deployed the application using Docker containers.
 \end{itemize}
-\vspace{-3mm}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Skills
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\header{Skills}
-\vspace{-1mm}
-\begin{longtable}{p{5.5cm}p{11cm}}
-	\textbf{Programming Languages:} & Python, Java, C, C++, R, Matlab, Scala, HTML, CSS, JavaScript                                     \\
-	\textbf{Machine Learning - AI:} & TensorFlow, Keras, Scikit-learn, XGBoost, OpenCV, NLTK, Spacy, LangChain, YOLO                    \\
-	\textbf{Data Analysis - Viz:}   & Pandas, NumPy, Matplotlib, Seaborn, Plotly, Power BI, Google Looker Studio                        \\
-	\textbf{Big Data:}              & Apache Kafka, Hadoop, Hive, Pig, Sqoop, Spark, HBase                                              \\
-	\textbf{Web Development:}       & Flask, FastAPI, Java EE, React, Streamlit, Bootstrap, Jinja, SQLAlchemy, Beautiful Soup, Selenium \\
-	\textbf{Tools - Platforms:}     & Git, GitHub, Linux, Docker, VS Code, AWS Cloud                                                               \\
-	\textbf{Databases:}             & MySQL, PostgreSQL, SQLite, Oracle SQL, MongoDB, Neo4j                                             \\
-	\textbf{Languages:}             & Arabic (Native), French (Fluent), English (Fluent)                                                \\
-\end{longtable}
-\vspace{-4mm}
+\vspace{0mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Academic Project
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \header{Academic Project}
-\vspace{0mm}
+\vspace{1mm}
 
 \href{https://github.com/kamaLc73/Seismic-GNSS-CNN}{\textbf{Earthquake Early Warning System}}\hfill{\sl Deep Learning, CNN, GNSS}\\
 \vspace{-2mm}
 \begin{itemize} \itemsep -3pt
     \item[] Designed CNN models using high-rate GNSS data to predict earthquake magnitude and fault lines with improved accuracy.
 \end{itemize}
-\vspace{-1mm}
+\vspace{-2mm}
 
-\href{https://github.com/kamaLc73/mini-cloud-training}{\textbf{Mini Cloud Training Platform}}\hfill{\sl FastAPI, CrewAI, MLflow, Streamlit}\\
+\href{https://github.com/HAS1ELB/document-classification-project}{\textbf{Document Classifier}}\hfill{\sl Computer Vision, NLP, Template Matching}\\
 \vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-    \item[] Fine-tuning platform for LLMs with CrewAI multi-agent architecture, JWT authentication, and MLflow tracking.
+	\item[] Classification of personal documents (ID cards, bank statements, employer documents, etc.) via Computer Vision, NLP, and template matching.
 \end{itemize}
-\vspace{-1mm}
+\vspace{-2mm}
 
 \href{https://github.com/kamaLc73/Data-Collect-LinkedIn-Profiles-}{\textbf{ENSAM Alumni Tracking (LinkedIn)}}\hfill{\sl Beautiful Soup, Selenium}\\
 \vspace{-2mm}
 \begin{itemize} \itemsep -3pt
     \item[] Developed web scraping tools to collect alumni data from LinkedIn, performed data analysis, and built models to predict career paths.
 \end{itemize}
-\vspace{-1mm}
+\vspace{-2mm}
 
-\href{https://github.com/kamaLc73/YOLO_kafka}{\textbf{Real-Time Stream Processing with Apache Kafka}}\hfill{\sl Apache Kafka, Streamlit, YOLO}\\
+\href{https://github.com/kamaLc73/real-time-fraud-detection}{\textbf{Real-Time Banking Fraud Detection}}\hfill{\sl Spark Streaming, Kafka, Docker}\\
 \vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-    \item[] Implemented a scalable real-time data streaming architecture using Apache Kafka to process images, videos, and text data streams.
+	\item[] Real-time fraud detection system using Spark Streaming and Kafka, based on 5 rules (high amount, velocity, risky location, multi-merchant, night-time).
 \end{itemize}
-\vspace{-1mm}
+\vspace{-0.75mm}
 
-\href{https://github.com/HAS1ELB/projet-migration-mysql-hadoop}{\textbf{MySQL to Hadoop Migration with Sqoop}}\hfill{\sl Sqoop, Hadoop, Hive, HDFS}\\
-\vspace{-2mm}
-\begin{itemize} \itemsep -3pt
-    \item[] Built data pipeline to transfer data from MySQL to HDFS using Sqoop and performed analysis with Hive.
-\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Technical Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Technical Skills}
 \vspace{-1mm}
+\begin{longtable}{p{5.5cm}p{11cm}}
+	\textbf{Languages:} & Python, Java, Matlab, Scala \\[1pt]
+	\textbf{ML - DL:} & NumPy, Pandas, Scikit-learn, TensorFlow, Keras, PyTorch, CNN, RNN \\[1pt]
+	\textbf{Computer Vision:} & OpenCV, YOLO \\[1pt]
+	\textbf{NLP - LLMs:} & Transformers, NLTK, Spacy, RAG, LangChain, Agent Orchestration \\[1pt]
+	\textbf{Data Visualization:} & Matplotlib, Seaborn, Plotly, Power BI, Google Looker Studio \\[1pt]
+	\textbf{Data Engineering:} & Kafka, Hadoop, Hive, Pig, Sqoop, Spark, HBase, ETL \\[1pt]
+	\textbf{Web Development:} & Flask, FastAPI, Streamlit, Java EE, Spring Boot, React \\[1pt]
+	\textbf{Web Scraping:} & Beautiful Soup, Selenium \\[1pt]
+	\textbf{DevOps:} & Docker, Kubernetes, Git, CI/CD, Jenkins, Linux Bash \\[1pt]
+	\textbf{Databases:} & MySQL, PostgreSQL, SQLite, Oracle SQL, MongoDB, Neo4j \\
+\end{longtable}
+\vspace{-2.886mm}
 
-\href{https://github.com/lidwaa/brain_tumor_classification}{\textbf{Brain Tumor Classification}}\hfill{\sl Deep Learning, CNN}\\
-\vspace{-2mm}
-\begin{itemize} \itemsep -3pt
-    \item[] Developed a CNN model to classify brain tumors as benign or malignant, achieving 98\% accuracy.
-\end{itemize}
-\vspace{-2mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Languages and Cross-Functional Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Languages and Soft Skills}
+\vspace{1mm}
+	\textbf{Languages:} Arabic (Native), French (Fluent), English (Fluent)\\
+	\textbf{Soft Skills:} Autonomy, Active listening, Adaptability, Teamwork\\
+\vspace{1mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Extracurricular Activities & Engagement
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Extracurricular Activities \& Engagement}
+\vspace{1mm}
+
+	\textbf{Roboticore Club} -- Media Relations: digital communication and content creation\\
+	\textbf{Club Art IT} -- Treasurer: budget and expense management\\
+\vspace{1mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Certifications
@@ -180,6 +187,5 @@ Engineering in Data Science, AI \textbar{} Integrated Preparatory Class. \hfill 
 • CCNA: Introduction to Networks - \textbf{\href{https://www.credly.com/badges/540e0c44-897a-4762-873b-7a01fbfb68ab/public\_url}{Cisco Networking Academy}}\\
 \vspace*{0mm}
 • CS50x: Introduction to Computer Science - \textbf{\href{https://certificates.cs50.io/e4d5f24a-9711-490a-9c03-5ed9ba3f056e.pdf?size=letter}{Harvard University (edX)}}\\
-\vspace*{0mm}
-\ 
+\vspace*{-15mm}
 \end{document}
