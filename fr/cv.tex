@@ -32,6 +32,8 @@
 
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 
+\newcommand{\cvitem}[1]{\item[] \hangindent=2.5mm \hangafter=1 • #1}
+
 \newcommand{\lineunder} {
 \vspace*{-8pt} \\
 \hspace*{-18pt} \hrulefill \\
@@ -43,7 +45,7 @@
 }
 
 \begin{document}
-\vspace*{-30pt}
+\vspace*{-25pt}
 \begin{center}
 	\begin{minipage}[c]{0.15\textwidth}
 		\begin{tikzpicture}
@@ -89,19 +91,19 @@ Ingénierie en Data Science, IA \& Big Data \textbar{} Classe Préparatoire Int�
 \textbf{\href{https://www.archytas.fr/}{Digiteam Archytas Conseil}}
 \hfill Rabat, Maroc | Juil 2025 - Sept 2025\\          \vspace{-2mm}
 	\begin{itemize} \itemsep -3pt
-	\item[] • Développé un chatbot pour la plateforme \href{https://fairlynk.com/}{\textbf{Fairlynk}} utilisant un pipeline RAG, Langchain avec LLMs externes via API.
-	\item[] • Prise en charge des questions multilingues en français, anglais et espagnol.
-	\item[] • Construction de l'interface utilisateur avec Streamlit, HTML et CSS.
+	\cvitem{Développé un chatbot RAG (LangChain + LLMs via API) pour \href{https://fairlynk.com/}{\textbf{Fairlynk}}.}
+	\cvitem{Support multilingue : français, anglais et espagnol.}
+	\cvitem{Conçu l’interface avec Streamlit (HTML/CSS).}
 \end{itemize}
 \vspace{-1mm}
 \textbf{ \href{https://github.com/kamaLc73/Plate-recognition}{Développement Backend} |} 
 \textbf{\href{https://www.bkam.ma/}{Bank Al-Maghrib (Dar Assikah)}}
 \hfill Salé, Maroc | Juil 2024 - Août 2024\\          \vspace{-2mm}
 	\begin{itemize} \itemsep -3pt
-	\item[] • Création d'une API Flask pour la détection de plaques d'immatriculation à partir d'images avec un modèle CNN.
-	\item[] • Précision de 95\% sur les plaques marocaines.
-	\item[] • Conception du schéma de base de données PostgreSQL.
-	\item[] • Déploiement de l'application avec des conteneurs Docker.
+	\cvitem{Développé une API Flask de détection de plaques à partir d’images (YOLO).}
+	\cvitem{Atteint 95\% de précision sur les plaques marocaines.}
+	\cvitem{Conçu le schéma de base PostgreSQL.}
+	\cvitem{Déployé l’application avec Docker.}
 \end{itemize}
 \vspace{0mm}
 
@@ -113,29 +115,21 @@ Ingénierie en Data Science, IA \& Big Data \textbar{} Classe Préparatoire Int�
 
 \href{https://github.com/kamaLc73/Seismic-GNSS-CNN}{\textbf{Système d'Alerte Précoce aux Tremblements de Terre}}\hfill{\sl Deep Learning, CNN, GNSS}\\
 \vspace{-2mm}
-\begin{itemize} \itemsep -3pt
-    \item[] Conception de modèles CNN utilisant des données GNSS haute fréquence pour prédire la magnitude des tremblements de terre et les lignes de faille avec une précision améliorée.
+	\begin{itemize} \itemsep -3pt
+	\cvitem{Conçu un pipeline GNSS →	 CNN (TensorFlow/Keras) pour prédire la magnitude.}
+	\cvitem{Prétraitement SAC avec ObsPy et split train/validation/test.}
+	\cvitem{Entraînement avec early stopping et sauvegarde du modèle pour l’inférence.}
+	\cvitem{Standardisé les entrées en tenseur fixe avec padding pour traces manquantes/courtes.}
 \end{itemize}
 \vspace{-2mm}
 
-\href{https://github.com/HAS1ELB/document-classification-project}{\textbf{Classificateur de Documents}}	\hfill{\sl Computer Vision, NLP, Template Matching}\\
+\href{https://github.com/HAS1ELB/document-classification-project}{\textbf{Classificateur de documents administratifs marocains}}	\hfill{\sl Computer Vision, NLP, Template Matching}\\
 \vspace{-2mm}
-\begin{itemize} \itemsep -3pt
-	\item[] Classification de documents personnels (CIN, relevés bancaires, documents employeur, etc.) via Computer Vision, NLP et template matching.
-\end{itemize}
-\vspace{-2mm}
-
-\href{https://github.com/kamaLc73/Data-Collect-LinkedIn-Profiles-}{\textbf{Suivi des Alumni ENSAM (LinkedIn)}}\hfill{\sl Beautiful Soup, Selenium}\\
-\vspace{-2mm}
-\begin{itemize} \itemsep -3pt
-    \item[] Développement d'outils de web scraping pour collecter les données des alumni depuis LinkedIn, analyse des données et construction de modèles pour prédire les parcours professionnels.
-\end{itemize}
-\vspace{-2mm}
-
-\href{https://github.com/kamaLc73/real-time-fraud-detection}{\textbf{Détection de Fraude Bancaire en Temps Réel}}\hfill{\sl Spark Streaming, Kafka, Docker}\\
-\vspace{-2mm}
-\begin{itemize} \itemsep -3pt
-	\item[] Système de détection de fraude en streaming avec Spark Streaming et Kafka, basé sur 5 règles (montant élevé, vélocité, localisation à risque, multi-marchands, horaire nocturne).
+	\begin{itemize} \itemsep -3pt
+	\cvitem{Développé un classificateur hybride : ResNet50 (CV) + CamemBERT (NLP) + template matching.}
+	\cvitem{Déployé une application Streamlit avec EasyOCR pour classification en temps réel.}
+	\cvitem{Mise en place d’un pipeline d’augmentation de données et transfer learning.}
+	\cvitem{Fusion pondérée des prédictions CV/NLP/template pour la décision finale.}
 \end{itemize}
 \vspace{-0.75mm}
 

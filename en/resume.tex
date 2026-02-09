@@ -32,6 +32,8 @@
 
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 
+\newcommand{\cvitem}[1]{\item[] \hangindent=2.5mm \hangafter=1 • #1}
+
 \newcommand{\lineunder} {
 \vspace*{-8pt} \\
 \hspace*{-18pt} \hrulefill \\
@@ -43,7 +45,7 @@
 }
 
 \begin{document}
-\vspace*{-30pt}
+\vspace*{-25pt}
 \begin{center}
 	\begin{minipage}[c]{0.15\textwidth}
 		\begin{tikzpicture}
@@ -89,19 +91,19 @@ Engineering in Data Science, AI \& Big Data \textbar{} Integrated Preparatory Cl
 \textbf{\href{https://www.archytas.fr/}{Digiteam Archytas Conseil}}
 \hfill Rabat, Morocco | Jul 2025 - Sept 2025\\          \vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-	\item[] • Developed a chatbot for the \href{https://fairlynk.com/}{\textbf{Fairlynk}} platform using a RAG pipeline, LangChain with external LLMs via API.
-	\item[] • Supported multilingual questions in French, English, and Spanish.
-	\item[] • Built user interface using Streamlit, HTML, and CSS.
+	\cvitem{Built a RAG chatbot (LangChain + external LLM APIs) for \href{https://fairlynk.com/}{\textbf{Fairlynk}}.}
+	\cvitem{Supported multilingual questions in French, English, and Spanish.}
+	\cvitem{Built the UI with Streamlit (HTML/CSS).}
 \end{itemize}
 \vspace{-2mm}
 \textbf{ \href{https://github.com/kamaLc73/Plate-recognition}{Backend Development} |} 
 \textbf{\href{https://www.bkam.ma/}{Bank Al-Maghrib (Dar Assikah)}}
 \hfill Sale, Morocco | Jul 2024 - Aug 2024\\          \vspace{-2mm}
 \begin{itemize} \itemsep -3pt
-	\item[] • Built a Flask API for license plate detection from images using a CNN model.
-	\item[] • Achieved 95\% accuracy on Moroccan plates.
-	\item[] • Designed PostgreSQL database schema.
-	\item[] • Deployed the application using Docker containers.
+	\cvitem{Built a Flask API for license plate detection from images (YOLO).}
+	\cvitem{Reached 95\% accuracy on Moroccan plates.}
+	\cvitem{Designed PostgreSQL database schema.}
+	\cvitem{Deployed the application with Docker containers.}
 \end{itemize}
 \vspace{0mm}
 
@@ -113,29 +115,21 @@ Engineering in Data Science, AI \& Big Data \textbar{} Integrated Preparatory Cl
 
 \href{https://github.com/kamaLc73/Seismic-GNSS-CNN}{\textbf{Earthquake Early Warning System}}\hfill{\sl Deep Learning, CNN, GNSS}\\
 \vspace{-2mm}
-\begin{itemize} \itemsep -3pt
-    \item[] Designed CNN models using high-rate GNSS data to predict earthquake magnitude and fault lines with improved accuracy.
+	\begin{itemize} \itemsep -3pt
+	\cvitem{Built a GNSS → CNN pipeline (TensorFlow/Keras) to predict earthquake magnitude.}
+	\cvitem{Processed SAC signals with ObsPy and used a train/validation/test split.}
+	\cvitem{Used early stopping and saved models for inference on new events.}
+	\cvitem{Standardized inputs to a fixed tensor shape with padding for missing/short traces.}
 \end{itemize}
 \vspace{-2mm}
 
-\href{https://github.com/HAS1ELB/document-classification-project}{\textbf{Document Classifier}}\hfill{\sl Computer Vision, NLP, Template Matching}\\
+\href{https://github.com/HAS1ELB/document-classification-project}{\textbf{Moroccan Administrative Documents Classifier}}\hfill{\sl Computer Vision, NLP, Template Matching}\\
 \vspace{-2mm}
-\begin{itemize} \itemsep -3pt
-	\item[] Classification of personal documents (ID cards, bank statements, employer documents, etc.) via Computer Vision, NLP, and template matching.
-\end{itemize}
-\vspace{-2mm}
-
-\href{https://github.com/kamaLc73/Data-Collect-LinkedIn-Profiles-}{\textbf{ENSAM Alumni Tracking (LinkedIn)}}\hfill{\sl Beautiful Soup, Selenium}\\
-\vspace{-2mm}
-\begin{itemize} \itemsep -3pt
-    \item[] Developed web scraping tools to collect alumni data from LinkedIn, performed data analysis, and built models to predict career paths.
-\end{itemize}
-\vspace{-2mm}
-
-\href{https://github.com/kamaLc73/real-time-fraud-detection}{\textbf{Real-Time Banking Fraud Detection}}\hfill{\sl Spark Streaming, Kafka, Docker}\\
-\vspace{-2mm}
-\begin{itemize} \itemsep -3pt
-	\item[] Real-time fraud detection system using Spark Streaming and Kafka, based on 5 rules (high amount, velocity, risky location, multi-merchant, night-time).
+	\begin{itemize} \itemsep -3pt
+	\cvitem{Built a hybrid classifier: ResNet50 (CV) + CamemBERT (NLP) + template matching.}
+	\cvitem{Deployed a Streamlit app with EasyOCR for real-time classification.}
+	\cvitem{Implemented data augmentation and transfer learning to improve generalization.}
+	\cvitem{Combined CV/NLP/template predictions using a weighted fusion strategy.}
 \end{itemize}
 \vspace{-0.75mm}
 
